@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Rosca";
+  src: url("./rosca.otf") format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 95%;
+  height: 70vh;
+  margin: 50px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s linear;
+}
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.text-box {
+  background: #00000083;
+  position: absolute;
+  bottom: 10%;
+  color: #fff;
+}
+.text-box .heading {
+  text-align: center;
+  font-size: 5rem;
+  font-family: Rosca;
+}
+.text-box .text {
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-family: rosca;
+}
+.buttons {
+  width: 200px;
+  margin: auto;
+  padding: 5px;
+}
+.buttons button {
+  font-size: 1.5rem;
+  padding: 5px 20px;
+  border: 0;
+  background: blue;
+  color: white;
+}
+
+@media screen and (max-width: 647px) {
+  .container {
+    width: 95%;
+    height: 30vh;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+      -5px -5px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s linear;
+  }
+  .text-box {
+    background: #00000083;
+    position: absolute;
+    bottom: 10%;
+    color: #fff;
+  }
+  .text-box .heading {
+    font-size: 2rem;
+    text-align: center;
+    font-family: Rosca;
+  }
+  .text-box .text {
+    font-size: 0.5rem;
+    width: 90%;
+  }
+}
